@@ -1,3 +1,7 @@
+# Quicken Amortization Example
+
+Simple amortization example project written in Objective-C, targeting OS X 10.10 or later.
+
  MIT License
 
  Copyright (c) 2016 Quicken, Inc.

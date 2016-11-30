@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F09430F1DCB8A7600568188 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F09430E1DCB8A7600568188 /* AppDelegate.m */; };
+		2F0943121DCB8A7600568188 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0943111DCB8A7600568188 /* main.m */; };
+		2F0943151DCB8A7600568188 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0943141DCB8A7600568188 /* ViewController.m */; };
+		2F09431A1DCB8A7600568188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0943181DCB8A7600568188 /* Main.storyboard */; };
+		2F0943251DCB8A7600568188 /* QAmortizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0943241DCB8A7600568188 /* QAmortizationTests.m */; };
+		2F0943301DCB8A7600568188 /* QAmortizationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F09432F1DCB8A7600568188 /* QAmortizationUITests.m */; };
+		2F09433F1DCBAE7C00568188 /* QAmortizationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F09433E1DCBAE7C00568188 /* QAmortizationController.m */; };
+		2FA6669C1DDF71E700F38AFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6669B1DDF71E700F38AFF /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F0943211DCB8A7600568188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F0943021DCB8A7600568188 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F0943091DCB8A7600568188;
+			remoteInfo = QAmortization;
+		};
+		2F09432C1DCB8A7600568188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F0943021DCB8A7600568188 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F0943091DCB8A7600568188;
+			remoteInfo = QAmortization;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F09430A1DCB8A7600568188 /* QAmortization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QAmortization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F09430D1DCB8A7600568188 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F09430E1DCB8A7600568188 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F0943111DCB8A7600568188 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F0943131DCB8A7600568188 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F0943141DCB8A7600568188 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F0943191DCB8A7600568188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F09431B1DCB8A7600568188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0943201DCB8A7600568188 /* QAmortizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QAmortizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0943241DCB8A7600568188 /* QAmortizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAmortizationTests.m; sourceTree = "<group>"; };
+		2F0943261DCB8A7600568188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F09432B1DCB8A7600568188 /* QAmortizationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QAmortizationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F09432F1DCB8A7600568188 /* QAmortizationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAmortizationUITests.m; sourceTree = "<group>"; };
+		2F0943311DCB8A7600568188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F09433D1DCBAE7C00568188 /* QAmortizationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAmortizationController.h; sourceTree = "<group>"; };
+		2F09433E1DCBAE7C00568188 /* QAmortizationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAmortizationController.m; sourceTree = "<group>"; };
+		2FA6669B1DDF71E700F38AFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F0943071DCB8A7600568188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09431D1DCB8A7600568188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0943281DCB8A7600568188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0943011DCB8A7600568188 = {
+			isa = PBXGroup;
+			children = (
+				2F09430C1DCB8A7600568188 /* QAmortization */,
+				2F0943231DCB8A7600568188 /* QAmortizationTests */,
+				2F09432E1DCB8A7600568188 /* QAmortizationUITests */,
+				2F09430B1DCB8A7600568188 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F09430B1DCB8A7600568188 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F09430A1DCB8A7600568188 /* QAmortization.app */,
+				2F0943201DCB8A7600568188 /* QAmortizationTests.xctest */,
+				2F09432B1DCB8A7600568188 /* QAmortizationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F09430C1DCB8A7600568188 /* QAmortization */ = {
+			isa = PBXGroup;
+			children = (
+				2F09430D1DCB8A7600568188 /* AppDelegate.h */,
+				2F09430E1DCB8A7600568188 /* AppDelegate.m */,
+				2F0943131DCB8A7600568188 /* ViewController.h */,
+				2F0943141DCB8A7600568188 /* ViewController.m */,
+				2F09433D1DCBAE7C00568188 /* QAmortizationController.h */,
+				2F09433E1DCBAE7C00568188 /* QAmortizationController.m */,
+				2F0943181DCB8A7600568188 /* Main.storyboard */,
+				2F09431B1DCB8A7600568188 /* Info.plist */,
+				2FA6669B1DDF71E700F38AFF /* Images.xcassets */,
+				2F0943101DCB8A7600568188 /* Supporting Files */,
+			);
+			path = QAmortization;
+			sourceTree = "<group>";
+		};
+		2F0943101DCB8A7600568188 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F0943111DCB8A7600568188 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F0943231DCB8A7600568188 /* QAmortizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F0943241DCB8A7600568188 /* QAmortizationTests.m */,
+				2F0943261DCB8A7600568188 /* Info.plist */,
+			);
+			path = QAmortizationTests;
+			sourceTree = "<group>";
+		};
+		2F09432E1DCB8A7600568188 /* QAmortizationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F09432F1DCB8A7600568188 /* QAmortizationUITests.m */,
+				2F0943311DCB8A7600568188 /* Info.plist */,
+			);
+			path = QAmortizationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F0943091DCB8A7600568188 /* QAmortization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0943341DCB8A7600568188 /* Build configuration list for PBXNativeTarget "QAmortization" */;
+			buildPhases = (
+				2F0943061DCB8A7600568188 /* Sources */,
+				2F0943071DCB8A7600568188 /* Frameworks */,
+				2F0943081DCB8A7600568188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QAmortization;
+			productName = QAmortization;
+			productReference = 2F09430A1DCB8A7600568188 /* QAmortization.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F09431F1DCB8A7600568188 /* QAmortizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0943371DCB8A7600568188 /* Build configuration list for PBXNativeTarget "QAmortizationTests" */;
+			buildPhases = (
+				2F09431C1DCB8A7600568188 /* Sources */,
+				2F09431D1DCB8A7600568188 /* Frameworks */,
+				2F09431E1DCB8A7600568188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F0943221DCB8A7600568188 /* PBXTargetDependency */,
+			);
+			name = QAmortizationTests;
+			productName = QAmortizationTests;
+			productReference = 2F0943201DCB8A7600568188 /* QAmortizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F09432A1DCB8A7600568188 /* QAmortizationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F09433A1DCB8A7600568188 /* Build configuration list for PBXNativeTarget "QAmortizationUITests" */;
+			buildPhases = (
+				2F0943271DCB8A7600568188 /* Sources */,
+				2F0943281DCB8A7600568188 /* Frameworks */,
+				2F0943291DCB8A7600568188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F09432D1DCB8A7600568188 /* PBXTargetDependency */,
+			);
+			name = QAmortizationUITests;
+			productName = QAmortizationUITests;
+			productReference = 2F09432B1DCB8A7600568188 /* QAmortizationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F0943021DCB8A7600568188 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Quicken, Inc.";
+				TargetAttributes = {
+					2F0943091DCB8A7600568188 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MQ5W46QNFN;
+						ProvisioningStyle = Automatic;
+					};
+					2F09431F1DCB8A7600568188 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MQ5W46QNFN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F0943091DCB8A7600568188;
+					};
+					2F09432A1DCB8A7600568188 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MQ5W46QNFN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F0943091DCB8A7600568188;
+					};
+				};
+			};
+			buildConfigurationList = 2F0943051DCB8A7600568188 /* Build configuration list for PBXProject "QAmortization" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F0943011DCB8A7600568188;
+			productRefGroup = 2F09430B1DCB8A7600568188 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F0943091DCB8A7600568188 /* QAmortization */,
+				2F09431F1DCB8A7600568188 /* QAmortizationTests */,
+				2F09432A1DCB8A7600568188 /* QAmortizationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F0943081DCB8A7600568188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA6669C1DDF71E700F38AFF /* Images.xcassets in Resources */,
+				2F09431A1DCB8A7600568188 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09431E1DCB8A7600568188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0943291DCB8A7600568188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F0943061DCB8A7600568188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F09433F1DCBAE7C00568188 /* QAmortizationController.m in Sources */,
+				2F0943151DCB8A7600568188 /* ViewController.m in Sources */,
+				2F0943121DCB8A7600568188 /* main.m in Sources */,
+				2F09430F1DCB8A7600568188 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09431C1DCB8A7600568188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0943251DCB8A7600568188 /* QAmortizationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0943271DCB8A7600568188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0943301DCB8A7600568188 /* QAmortizationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F0943221DCB8A7600568188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F0943091DCB8A7600568188 /* QAmortization */;
+			targetProxy = 2F0943211DCB8A7600568188 /* PBXContainerItemProxy */;
+		};
+		2F09432D1DCB8A7600568188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F0943091DCB8A7600568188 /* QAmortization */;
+			targetProxy = 2F09432C1DCB8A7600568188 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F0943181DCB8A7600568188 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F0943191DCB8A7600568188 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F0943321DCB8A7600568188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2F0943331DCB8A7600568188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2F0943351DCB8A7600568188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MQ5W46QNFN;
+				INFOPLIST_FILE = QAmortization/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quicken.QAmortization;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F0943361DCB8A7600568188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MQ5W46QNFN;
+				INFOPLIST_FILE = QAmortization/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quicken.QAmortization;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2F0943381DCB8A7600568188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MQ5W46QNFN;
+				INFOPLIST_FILE = QAmortizationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quicken.QAmortizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QAmortization.app/Contents/MacOS/QAmortization";
+			};
+			name = Debug;
+		};
+		2F0943391DCB8A7600568188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MQ5W46QNFN;
+				INFOPLIST_FILE = QAmortizationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quicken.QAmortizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QAmortization.app/Contents/MacOS/QAmortization";
+			};
+			name = Release;
+		};
+		2F09433B1DCB8A7600568188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MQ5W46QNFN;
+				INFOPLIST_FILE = QAmortizationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quicken.QAmortizationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QAmortization;
+			};
+			name = Debug;
+		};
+		2F09433C1DCB8A7600568188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MQ5W46QNFN;
+				INFOPLIST_FILE = QAmortizationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Quicken.QAmortizationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QAmortization;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F0943051DCB8A7600568188 /* Build configuration list for PBXProject "QAmortization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0943321DCB8A7600568188 /* Debug */,
+				2F0943331DCB8A7600568188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0943341DCB8A7600568188 /* Build configuration list for PBXNativeTarget "QAmortization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0943351DCB8A7600568188 /* Debug */,
+				2F0943361DCB8A7600568188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F0943371DCB8A7600568188 /* Build configuration list for PBXNativeTarget "QAmortizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0943381DCB8A7600568188 /* Debug */,
+				2F0943391DCB8A7600568188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F09433A1DCB8A7600568188 /* Build configuration list for PBXNativeTarget "QAmortizationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F09433B1DCB8A7600568188 /* Debug */,
+				2F09433C1DCB8A7600568188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F0943021DCB8A7600568188 /* Project object */;
+}

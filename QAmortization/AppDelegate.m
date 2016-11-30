@@ -1,3 +1,4 @@
+/*
  MIT License
 
  Copyright (c) 2016 Quicken, Inc.
@@ -21,3 +22,23 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
+ */
+
+#import "AppDelegate.h"
+
+@implementation AppDelegate
+
+//------------------------------------------------------------------------------
+- (void) applicationDidFinishLaunching: (NSNotification *)aNotification
+{
+	// Insert code here to initialize your application
+}
+
+
+//------------------------------------------------------------------------------
+- (void) applicationWillTerminate: (NSNotification *)aNotification
+{
+	// Insert code here to tear down your application
+}
+
+@end
