@@ -225,7 +225,7 @@ const NSString* kPrincipalPaid = @"pTotal";
 		}
 		interestRate = [interestRate decimalNumberByRaisingToPower: [exponent unsignedIntegerValue]];
 	}
-    NSLog(@"interestRate: %@",interestRate);
+//    NSLog(@"interestRate: %@",interestRate);
 	interestRate = [interestRate decimalNumberBySubtracting: [NSDecimalNumber one]];
     
 	return interestRate;
