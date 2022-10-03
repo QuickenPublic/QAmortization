@@ -36,6 +36,7 @@ const NSString* kPrincipalPaid = @"pTotal";
 
 @implementation QAmortizationController
 
+#pragma mark compoundingPeriodsForPeriodType
 //------------------------------------------------------------------------------
 - (NSDecimalNumber *) compoundingPeriodsForPeriodType: (QAmortizationCompoundPeriod_e)inCompoundingPeriod
 {
@@ -66,6 +67,7 @@ const NSString* kPrincipalPaid = @"pTotal";
 	return [NSDecimalNumber decimalNumberWithMantissa: numPeriods exponent: 0 isNegative: NO];
 }
 
+#pragma mark paymentPeriodsForPaymentType
 //------------------------------------------------------------------------------
 - (NSDecimalNumber *) paymentPeriodsForPaymentType: (QAmortizationPaymentPeriod_e)inPaymentPeriod
 {
@@ -112,6 +114,7 @@ const NSString* kPrincipalPaid = @"pTotal";
 	return [NSDecimalNumber decimalNumberWithMantissa: numPayments exponent: 0 isNegative: NO];
 }
 
+#pragma mark numYearsInLoan
 //------------------------------------------------------------------------------
 - (NSDecimalNumber *) numYearsInLoan
 {
@@ -153,14 +156,23 @@ const NSString* kPrincipalPaid = @"pTotal";
 	return numYears;
 }
 
+#pragma mark effectiveInterestRate
 //------------------------------------------------------------------------------
 - (NSDecimalNumber *) effectiveInterestRate
 {
 	NSDecimalNumber* paymentPeriods = [self paymentPeriodsForPaymentType: self.paymentPeriod];
-
-	// Covert interest rate from percentage to fractional value
-	NSDecimalNumber* oneHundred = [NSDecimalNumber decimalNumberWithMantissa: 100 exponent: 0 isNegative: NO];
-	NSDecimalNumber* interestRate = [self.interestRate decimalNumberByDividingBy: oneHundred];
+//    NSDecimalNumberHandler* exponentDecimal = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode: NSRoundPlain
+//                                                                                                 scale:10
+//                                                                                      raiseOnExactness:NO
+//                                                                                       raiseOnOverflow:NO
+//                                                                                      raiseOnUnderflow:NO
+//                                                                                   raiseOnDivideByZero:NO];
+	// Covert interest rate from percentage to decimal value
+//	NSDecimalNumber* oneHundred = [NSDecimalNumber decimalNumberWithMantissa: 100 exponent: 0 isNegative: NO];
+//	NSDecimalNumber* interestRate = [self.interestRate decimalNumberByDividingBy: oneHundred];
+    NSDecimalNumber* interestRate = [self.interestRate decimalNumberByDividingBy: [NSDecimalNumber decimalNumberWithMantissa:100
+                                                                                                                    exponent:0
+                                                                                                                  isNegative:NO]];
 
 	BOOL zeroPaymentPeriods = [paymentPeriods isEqualToNumber: @0];
 
@@ -186,10 +198,19 @@ const NSString* kPrincipalPaid = @"pTotal";
 		{
 			exponent = [compoundingPeriods decimalNumberByDividingBy: paymentPeriods];
 		}
-
+        
 		interestRate = [interestRate decimalNumberByDividingBy: compoundingPeriods];
+
 		interestRate = [[NSDecimalNumber one] decimalNumberByAdding: interestRate];
-		interestRate = [interestRate decimalNumberByRaisingToPower: [exponent unsignedIntegerValue]];
+
+        // below is where interestRate is becoming 1
+//        interestRate = [interestRate decimalNumberByRaisingToPower: [exponent unsignedIntValue]  withBehavior: exponentDecimal];
+//        use of decimalNumberByRaisingToPower is inept for this application. Exponent is 'int'
+//        work-around below
+        double rate;
+        rate = pow([interestRate doubleValue], [exponent doubleValue]);
+        NSDecimalNumber* temp = [[NSDecimalNumber alloc] initWithDouble: rate];
+        interestRate = temp;
 	}
 	else
 	{
@@ -204,17 +225,17 @@ const NSString* kPrincipalPaid = @"pTotal";
 		}
 		interestRate = [interestRate decimalNumberByRaisingToPower: [exponent unsignedIntegerValue]];
 	}
-
+//    NSLog(@"interestRate: %@",interestRate);
 	interestRate = [interestRate decimalNumberBySubtracting: [NSDecimalNumber one]];
-
+    
 	return interestRate;
 }
 
+#pragma mark updateCalculations
 //------------------------------------------------------------------------------
 - (void) updateCalculations
 {
 	self.ratePerPeriod = [self effectiveInterestRate];
-
 	NSDecimalNumber* numPaymentsPerYear = [self paymentPeriodsForPaymentType: self.paymentPeriod];
 	NSDecimalNumber* numYears = [self numYearsInLoan];
 
@@ -232,16 +253,24 @@ const NSString* kPrincipalPaid = @"pTotal";
 	//
 	//	payment = ((effectiveRate * openingBalance) * pow( 1 + effectiveRate, totalPayments )) / (pow( 1 + effectiveRate, totalPayments) - 1);
 
+    // interestPercentage = (1+r)^n
 	NSDecimalNumber* interestMultiplier = [[NSDecimalNumber one] decimalNumberByAdding: self.ratePerPeriod];
-	NSDecimalNumber* interestPercentage = [interestMultiplier decimalNumberByRaisingToPower: self.totalPayments.unsignedIntegerValue];
 
+	NSDecimalNumber* interestPercentage = [interestMultiplier decimalNumberByRaisingToPower: self.totalPayments.unsignedIntegerValue];
+    // openingInterest = P*r
 	NSDecimalNumber* openingInterest = [self.ratePerPeriod decimalNumberByMultiplyingBy: self.openingBalance];
 
 	NSDecimalNumber* numerator = [openingInterest decimalNumberByMultiplyingBy: interestPercentage];
+    NSDecimalNumber* denominator = [interestPercentage decimalNumberBySubtracting: [NSDecimalNumber one]];
 
-	NSDecimalNumber* denominator = [interestPercentage decimalNumberBySubtracting: [NSDecimalNumber one]];
+    if ([interestPercentage isEqualTo: [NSDecimalNumber one]])
+        NSLog(@"WELL THAT DIDN'T WORK");
+    if([denominator isEqualTo: [NSDecimalNumber zero]])
+        NSLog(@"error: 'denominator' is zero!!!!");
 
-	self.monthlyPIPayment = [numerator decimalNumberByDividingBy: denominator];
+  
+    if ([interestPercentage isNotEqualTo: [NSDecimalNumber one]])
+    self.monthlyPIPayment = [numerator decimalNumberByDividingBy:denominator];
 
 	// calc total payment by adding in any additional escrow/principal adjustments
 
@@ -260,6 +289,7 @@ const NSString* kPrincipalPaid = @"pTotal";
 		self.totalMonthlyPayment = [self.totalMonthlyPayment decimalNumberByAdding: self.additionalPrincipal];
 }
 
+#pragma mark amortizationSchedule
 //------------------------------------------------------------------------------
 - (NSArray<NSDictionary *> *) amortizationSchedule
 {
